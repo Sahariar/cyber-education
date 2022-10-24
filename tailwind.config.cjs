@@ -4,49 +4,51 @@ module.exports = {
 	daisyui: {
 		themes: [
 			{
-				cyberlight: {
-					primary: "#FFCD34",
-
-					secondary: "#113385",
-
-					accent: "#F75F05",
-
-					neutral: "#352A3C",
-
-					"base-100": "#FBFCFD",
-
-					info: "#0ea5e9",
-
-					success: "#16a34a",
-
-					warning: "#a16207",
-
-					error: "#f43f5e",
-				},
-				cyberdark: {
-    
-          "primary": "#ce5654",
+			cyberLight: {
+		 
+         
+        "primary": "#fce355",
           
-          "secondary": "#3f98d3",
-                   
-          "accent": "#fcd34d",
-                   
-          "neutral": "#ecfccb",
-                   
-          "base-100": "#111827",
-                   
-          "info": "#3656E2",
-                   
-          "success": "#1A9E4C",
-                   
-          "warning": "#F0C54C",
-                   
-          "error": "#F54D85",
+        "secondary": "#c7d2fe",
+                 
+        "accent": "#a78bfa",
+                 
+        "neutral": "#181B20",
+                 
+        "base-100": "#FCFCFC",
+                 
+        "info": "#8CCBF8",
+                 
+        "success": "#4ade80",
+                 
+        "warning": "#F4BD71",
+                 
+        "error": "#FA1E4E",
 				},
+				cyberDark: {
+          "primary": "#fde047",
+          
+          "secondary": "#f43387",
+                   
+          "accent": "#543064",
+                   
+          "neutral": "#ffedd5",
+                   
+          "base-100": "#151623",
+                   
+          "info": "#46A6D2",
+                   
+          "success": "#1CD98A",
+                   
+          "warning": "#DC9209",
+                   
+          "error": "#E13356",
+         },
 			},
 		],
-    darkTheme: "cyberdark",
-    ligthTheme: "cyberlight",
 	},
-	plugins: [require("daisyui")],
+	plugins: [
+    require("daisyui"),
+],
+  
 };

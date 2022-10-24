@@ -5,6 +5,11 @@ import  AuthProvider, { AuthContext } from "./context/AuthProvider";
 import "./index.css";
 import { route } from "./Routes/Route";
 
+
+/*Initialize under useEffect */
+
+
+
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
     <AuthProvider>
