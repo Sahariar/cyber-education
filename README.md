@@ -22,7 +22,7 @@ npm install
 👤 **Sahariar Kabir**
 
 * Website: http://sahariarkabir.com/
-* Twitter: [@sahariar\_\_kabir](https://twitter.com/sahariar\_\_kabir)
+* Twitter: [@sahariar\_\_kabir](https://twitter.com/Sahariar__Kabir)
 * Github: [@sahariar](https://github.com/sahariar)
 * LinkedIn: [@sahariar](https://linkedin.com/in/sahariar)
 
