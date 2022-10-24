@@ -29,7 +29,7 @@ module.exports = {
           
           "secondary": "#3f98d3",
                    
-          "accent": "#c729d8",
+          "accent": "#fcd34d",
                    
           "neutral": "#ecfccb",
                    
@@ -46,6 +46,7 @@ module.exports = {
 			},
 		],
     darkTheme: "cyberdark",
+    ligthTheme: "cyberlight",
 	},
 	plugins: [require("daisyui")],
 };

@@ -17,7 +17,9 @@ const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 
 const AuthProvider = ({ children }) => {
-	const [user, setUser] = useState(null);
+	const [user, setUser] = useState({
+		displayName:"Demo User"
+	});
 	const [loading, setLoading] = useState(true);
 
 	const logInWithGoogle = () => {
@@ -69,7 +71,9 @@ const AuthProvider = ({ children }) => {
 	};
 
 	return (
-		<AuthContext.Provider value={authValues}>{children}</AuthContext.Provider>
+		<AuthContext.Provider value={authValues}>
+			{children}
+		</AuthContext.Provider>
 	);
 };
 
