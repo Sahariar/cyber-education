@@ -24,23 +24,24 @@ module.exports = {
 					error: "#f43f5e",
 				},
 				cyberdark: {
-					primary: "#ce5654",
-
-					secondary: "#3f98d3",
-
-					accent: "#c729d8",
-
-					neutral: "#1A191F",
-
-					"base-100": "#2A2447",
-
-					info: "#3656E2",
-
-					success: "#1A9E4C",
-
-					warning: "#F0C54C",
-
-					error: "#F54D85",
+    
+          "primary": "#ce5654",
+          
+          "secondary": "#3f98d3",
+                   
+          "accent": "#c729d8",
+                   
+          "neutral": "#ecfccb",
+                   
+          "base-100": "#111827",
+                   
+          "info": "#3656E2",
+                   
+          "success": "#1A9E4C",
+                   
+          "warning": "#F0C54C",
+                   
+          "error": "#F54D85",
 				},
 			},
 		],
