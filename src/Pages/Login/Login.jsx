@@ -87,6 +87,48 @@ const Login = () => {
                 <h1 className="text-4xl font-bold text-center text-white">
                     Login Page
                 </h1>
+				<div className="text-sm breadcrumbs text-center justify-center flex mt-4 text-white">
+					<ul>
+						<li>
+							<Link to={'/'}>
+							
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									className="w-4 h-4 mr-2 stroke-current"
+								>
+									<path
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="2"
+										d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+									></path>
+								</svg>
+								Home
+								</Link>
+						</li>
+						<li>
+						<Link to={'/login'}>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									className="w-4 h-4 mr-2 stroke-current"
+								>
+									<path
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="2"
+										d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+									></path>
+								</svg>
+								Login
+								</Link>
+						</li>
+					</ul>
+				</div>
+
             </div>
             <div className="container mx-auto">
             <div className="flex">

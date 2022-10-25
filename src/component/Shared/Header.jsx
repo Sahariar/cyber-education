@@ -85,7 +85,7 @@ const Header = () => {
 						<span className="btn normal-case text-xl gap-2 btn-neutral">
 							{" "}
 						<Logo> </Logo>
-							<span className="text-primary-focus">Cyber Edu</span>
+							<span className="text-primary-focus hidden md:block">Cyber Edu</span>
 						</span>
 					</Link>{" "}
 				</div>
@@ -124,8 +124,8 @@ const Header = () => {
 						<div className="flex items-center">
 							<div className="dropdown dropdown-end">
 							<div className="tooltip tooltip-primary tooltip-left" data-tip={`Welcome, ${user?.displayName}`}>
-							<label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-									<div className="w-10 rounded-full">
+							<label tabIndex={0} className="btn btn-ghost btn-circle avatar ">
+									<div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
 										<img
 											src={
 												user?.photoURL
@@ -159,14 +159,12 @@ const Header = () => {
 						<div className="flex">
 							<div className="auth-area gap-4 flex">
 								<Link to={"/login"}>
-									<span className="btn btn-outline btn-accent-content">
+									<span className="btn btn-primary">
 										{" "}
 										Login
 									</span>{" "}
 								</Link>
-								<Link to={"/register"}>
-									<span className="btn btn-primary"> Register</span>{" "}
-								</Link>
+							
 							</div>
 						</div>
 					)}

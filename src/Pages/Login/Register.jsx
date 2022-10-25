@@ -170,7 +170,7 @@ const Register = () => {
 						<p className="text-sm text-center text-accent">
 							Already have account?
 							<Link to={"/login"}>
-								<span className="focus:underline hover:underline text-accent">
+								<span className="focus:underline hover:underline bg-accent text-primary p-2 mx-2 rounded-md">
 									Login here
 								</span>
 							</Link>
@@ -179,7 +179,7 @@ const Register = () => {
 							<button
 								aria-label="Login with Google"
 								type="button"
-								className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-violet-400"
+								className="flex items-center justify-center w-full p-4 space-x-4 border border-black rounded-md focus:ring-2 focus:ring-offset-1 hover:btn-primary"
 								onClick={handleGoogleSubmission}
 							>
 								<svg
