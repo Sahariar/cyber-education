@@ -9,13 +9,14 @@ import {
 	onAuthStateChanged,
     sendEmailVerification,
     signInWithEmailAndPassword,
-    updateProfile
+    updateProfile,
+	GithubAuthProvider
 } from "firebase/auth";
 
 export const AuthContext = createContext();
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
-
+const gitHubProvider = new GithubAuthProvider();
 const AuthProvider = ({ children }) => {
 	const [user, setUser] = useState({
 		displayName:"Demo User"
@@ -25,6 +26,10 @@ const AuthProvider = ({ children }) => {
 	const logInWithGoogle = () => {
 		setLoading(true);
 		return signInWithPopup(auth, provider);
+	};
+	const logInWithGitHub = () => {
+		setLoading(true);
+		return signInWithPopup(auth, gitHubProvider);
 	};
 
 	const createUserWithEmail = (email, password) => {
@@ -68,6 +73,7 @@ const AuthProvider = ({ children }) => {
 		loading,
         verifyEmail,
         userProfileUpdate,
+		logInWithGitHub,
 	};
 
 	return (

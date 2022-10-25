@@ -5,13 +5,11 @@ module.exports = {
 		themes: [
 			{
 			cyberLight: {
-		 
-         
         "primary": "#fce355",
           
         "secondary": "#c7d2fe",
                  
-        "accent": "#a78bfa",
+        "accent": "#210c66",
                  
         "neutral": "#181B20",
                  
@@ -26,23 +24,23 @@ module.exports = {
         "error": "#FA1E4E",
 				},
 				cyberDark: {
-          "primary": "#fde047",
+          "primary": "#f4fcae",
           
-          "secondary": "#f43387",
+          "secondary": "#e3ff89",
                    
-          "accent": "#543064",
+          "accent": "#7e1eaa",
                    
-          "neutral": "#ffedd5",
+          "neutral": "#2F2136",
                    
-          "base-100": "#151623",
+          "base-100": "#3D3D3D",
                    
-          "info": "#46A6D2",
+          "info": "#3392E6",
                    
-          "success": "#1CD98A",
+          "success": "#44E4A4",
                    
-          "warning": "#DC9209",
+          "warning": "#EFB95D",
                    
-          "error": "#E13356",
+          "error": "#E64155",
          },
 			},
 		],
