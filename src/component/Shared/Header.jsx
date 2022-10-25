@@ -82,7 +82,7 @@ const Header = () => {
 					</div>
 					<Link to={"/"}>
 						{" "}
-						<span className="btn btn-ghost normal-case text-xl gap-2 bg-neutral">
+						<span className="btn normal-case text-xl gap-2 btn-neutral">
 							{" "}
 						<Logo> </Logo>
 							<span className="text-primary-focus">Cyber Edu</span>
