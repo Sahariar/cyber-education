@@ -36,6 +36,7 @@ export const route = createBrowserRouter([
             },
             {
                 path:"/curriculum",
+                loader: ()=> fetch('http://localhost:4000/curriculum'),
                 element:<Curriculum></Curriculum>
             },
             {
