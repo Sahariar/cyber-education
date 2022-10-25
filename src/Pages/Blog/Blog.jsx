@@ -148,6 +148,7 @@ const Blog = () => {
 						</h4>
 						<p>
 							There are others User Authentication Platforms Like:
+						</p>
 							<ol className="list-decimal text-black font-bold m-12">
 								<li>STYTCH</li>
 								<li>Ory</li>
@@ -161,7 +162,7 @@ const Blog = () => {
 								<li>Amazon Cognito</li>
 								<li>OneLogin</li>
 							</ol>
-						</p>
+						
 					</div>
 				</article>
 				<article className=" max-w-4xl px-6 py-24 mx-auto space-y-6 dark:bg-gray-50 dark:text-gray-900 rounded-xl shadow-xl">
