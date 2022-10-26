@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
     
 		<footer className=" bg-neutral text-primary">
-			<div className="container mx-auto my-4 pt-10 px-10">
+			<div className="container mx-auto pt-10 px-10">
 				<div className="footer lg:grid-rows-1 grid-rows-2">
 					<div>
 						<span className="footer-title">Services</span>

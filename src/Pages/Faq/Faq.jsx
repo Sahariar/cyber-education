@@ -1,18 +1,17 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Faq = () => {
-    return (
-        <section className="faq-page">
-				<div className="bg-accent p-12 my-10 shadow-xl">
+	return (
+		<section className="faq-page">
+			<div className="bg-accent p-12 my-10 shadow-xl">
 				<h1 className="text-4xl font-bold text-center text-white">
-				Faq
+					Frequently Asked Questions
 				</h1>
 				<div className="text-sm breadcrumbs text-center justify-center flex mt-4 text-white">
 					<ul>
 						<li>
-							<Link to={'/'}>
-							
+							<Link to={"/"}>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									fill="none"
@@ -27,10 +26,10 @@ const Faq = () => {
 									></path>
 								</svg>
 								Home
-								</Link>
+							</Link>
 						</li>
 						<li>
-						<Link to={'/faq'}>
+							<Link to={"/faq"}>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									fill="none"
@@ -45,31 +44,102 @@ const Faq = () => {
 									></path>
 								</svg>
 								Faq
-								</Link>
+							</Link>
 						</li>
 					</ul>
 				</div>
 			</div>
-	<div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
-		<h2 className="text-2xl font-semibold sm:text-4xl">Frequently Asked Questions</h2>
-		<p className="mt-4 mb-8 dark:text-gray-400">Sagittis tempor donec id vestibulum viverra. Neque condimentum primis orci at lacus amet bibendum.</p>
-		<div className="space-y-4">
-			<details className="w-full border rounded-lg">
-				<summary className="px-4 py-6 focus:outline-none focus-visible:ring-violet-400">Ex orci laoreet egestas sapien magna egestas scelerisque?</summary>
-				<p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">Lectus iaculis orci metus vitae ligula dictum per. Nisl per nullam taciti at adipiscing est. </p>
-			</details>
-			<details className="w-full border rounded-lg">
-				<summary className="px-4 py-6 focus:outline-none focus-visible:ring-violet-400">Lorem at arcu rutrum viverra metus sapien venenatis lobortis odio?</summary>
-				<p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">Tincidunt ut hac condimentum rhoncus phasellus nostra. Magna porttitor egestas tincidunt neque vehicula potenti. </p>
-			</details>
-			<details className="w-full border rounded-lg">
-				<summary className="px-4 py-6 focus:outline-none focus-visible:ring-violet-400">Eleifend feugiat sollicitudin laoreet adipiscing bibendum suscipit erat?</summary>
-				<p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">Justo libero tellus integer tincidunt justo semper consequat venenatis aliquet imperdiet. Ultricies urna proin fusce nulla pretium sodales vel magna et massa euismod vulputate sed. </p>
-			</details>
-		</div>
-	</div>
-</section>
-    );
+			<div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
+				<div className="space-y-4 w-8/12 mx-auto">
+					<details className=" border rounded-lg">
+						<summary className="px-4 py-6 text-2xl">
+						What’s best: instructor-led training or self-paced learning?
+						</summary>
+						<p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+						One of the most common eLearning FAQs is whether companies should invest in instructor-led training or self-paced learning. The answer really depends on the situation and the audience.
+						</p><p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+Instructor-led training has the advantage of being immediate and interactive. Employees can ask SMEs questions in real-time and the answer will benefit the whole group, not just the person who asked the question. Classroom training has been a preference among learners for a long time, as this Training Industry article points out — and instructor-led training replicates that.
+</p><p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+On the cons side though, instructor-led training can be too rigid and expensive.
+</p><p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+Self-paced learning, on the other hand, is much more flexible. Learners will usually watch videos and complete training sessions on their own time. This way, they get to create a learning schedule that works best for them.
+</p><p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+Self-paced learning is cost-effective, too. People can rewatch videos as many times as they need at no extra cost, whereas if you’ve booked an SME for a webinar you’ve paid them for that one appearance. Everything else would probably be charged extra. Yet, self-paced learning doesn’t provide structure to learners, making it difficult for people who struggle with self-discipline to hit their training goals.
+</p><p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+Wouldn’t it be great to have the structure and interactive aspect of instructor-led training and the flexibility and cost-effectiveness of self-paced training?
+</p> <p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+With blended learning, you can have the best of both worlds.
+</p><p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+Blended learning means that you can still invite SMEs for webinars, and, at the same time, offer training material people can revisit at their own pace. It provides just enough structure, while still allowing for flexibility. Plus, with blended training, you have more chances of keeping learners engaged, as different people learn in different ways.
+						</p>
+					</details>
+
+					<details className="w-full border rounded-lg">
+						<summary className="px-4 py-6 text-2xl">
+						What are the benefits of gamification in eLearning?
+						</summary>
+						<p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+						When researching eLearning or when building your first eLearning courses, gamification will always come up sooner or later.
+						</p>
+						<p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+						One of the most common eLearning FAQs is whether companies should invest in instructor-led training or self-paced learning. The answer really depends on the situation and the audience.
+						</p><p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+Instructor-led training has the advantage of being immediate and interactive. Employees can ask SMEs questions in real-time and the answer will benefit the whole group, not just the person who asked the question. Classroom training has been a preference among learners for a long time, as this Training Industry article points out — and instructor-led training replicates that.
+</p><p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+On the cons side though, instructor-led training can be too rigid and expensive.
+</p><p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+Self-paced learning, on the other hand, is much more flexible. Learners will usually watch videos and complete training sessions on their own time. This way, they get to create a learning schedule that works best for them.
+</p><p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+Self-paced learning is cost-effective, too. People can rewatch videos as many times as they need at no extra cost, whereas if you’ve booked an SME for a webinar you’ve paid them for that one appearance. Everything else would probably be charged extra. Yet, self-paced learning doesn’t provide structure to learners, making it difficult for people who struggle with self-discipline to hit their training goals.
+</p><p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+Wouldn’t it be great to have the structure and interactive aspect of instructor-led training and the flexibility and cost-effectiveness of self-paced training?
+</p> <p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+With blended learning, you can have the best of both worlds.
+</p><p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+Blended learning means that you can still invite SMEs for webinars, and, at the same time, offer training material people can revisit at their own pace. It provides just enough structure, while still allowing for flexibility. Plus, with blended training, you have more chances of keeping learners engaged, as different people learn in different ways.
+						</p>
+					</details>
+					<details className="w-full border rounded-lg">
+						<summary className="px-4 py-6 text-2xl">
+						Should we ask employees to bring their own devices or take training only on their corporate computers/mobiles?
+						</summary>
+						<p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+						Just like most of the other eLearning questions and answers, this is not a “black-and-white” issue. Both options have their pros and cons.
+						</p>
+						<p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+						When researching eLearning or when building your first eLearning courses, gamification will always come up sooner or later.
+						</p>
+						<p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+						One of the most common eLearning FAQs is whether companies should invest in instructor-led training or self-paced learning. The answer really depends on the situation and the audience.
+						</p><p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+Instructor-led training has the advantage of being immediate and interactive. Employees can ask SMEs questions in real-time and the answer will benefit the whole group, not just the person who asked the question. Classroom training has been a preference among learners for a long time, as this Training Industry article points out — and instructor-led training replicates that.
+</p><p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+On the cons side though, instructor-led training can be too rigid and expensive.
+</p><p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+Self-paced learning, on the other hand, is much more flexible. Learners will usually watch videos and complete training sessions on their own time. This way, they get to create a learning schedule that works best for them.
+</p><p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+Self-paced learning is cost-effective, too. People can rewatch videos as many times as they need at no extra cost, whereas if you’ve booked an SME for a webinar you’ve paid them for that one appearance. Everything else would probably be charged extra. Yet, self-paced learning doesn’t provide structure to learners, making it difficult for people who struggle with self-discipline to hit their training goals.
+</p><p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+Wouldn’t it be great to have the structure and interactive aspect of instructor-led training and the flexibility and cost-effectiveness of self-paced training?
+</p> <p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+With blended learning, you can have the best of both worlds.
+</p><p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+Blended learning means that you can still invite SMEs for webinars, and, at the same time, offer training material people can revisit at their own pace. It provides just enough structure, while still allowing for flexibility. Plus, with blended training, you have more chances of keeping learners engaged, as different people learn in different ways.
+						</p>
+					</details>
+					<details className="w-full border rounded-lg">
+						<summary className="px-4 py-6 text-2xl">
+						What are the tools used to record from your screen?
+ 
+						</summary>
+						<p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+						authoring tool is equipped with an editing capability to enable you to record your screen using its screen recorder.
+						</p>
+					</details>
+				</div>
+			</div>
+		</section>
+	);
 };
 
 export default Faq;
