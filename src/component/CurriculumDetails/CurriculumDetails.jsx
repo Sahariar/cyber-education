@@ -1,10 +1,12 @@
 import React from "react";
 import { Link, useLoaderData } from "react-router-dom";
+import DetailsContent from "../DetailsContent/DetailsContent";
 import DetailsSidebar from "../DetailsSidebar/DetailsSidebar";
 
 const CurriculumDetails = () => {
 	const cuDetails = useLoaderData();
 	const { id, tittle, description, img, profile, price, rating } = cuDetails;
+    const studentEnroll = Math.floor((Math.random() * 1000) + 1);
 
 	return (
 		<section className="curriculum-page">
@@ -68,14 +70,18 @@ const CurriculumDetails = () => {
 				</div>
 			</div>
 			<div className="container mx-auto space-y-6 my-24">
-				<div className="flex flex-col lg:flex-row-reverse gap-4">
-					<div className="lg:w-3/12 w-full ">
+				<div className="flex flex-col xl:flex-row-reverse gap-4">
+					<div className="xl:w-3/12 w-11/12 mx-auto ">
 						<DetailsSidebar 
                         cuDetails = {cuDetails}
+                        studentEnroll = { studentEnroll }
                         ></DetailsSidebar>
 					</div>
-					<div className="lg:w-9/12 mx-auto w-full">
-						<h2 className="text-4xl">{tittle}</h2>
+					<div className="xl:w-9/12 mx-auto w-11/12">
+                    <DetailsContent 
+                        cuDetails = {cuDetails}
+                        studentEnroll = { studentEnroll }
+                        ></DetailsContent>
 					</div>
 				</div>
 			</div>

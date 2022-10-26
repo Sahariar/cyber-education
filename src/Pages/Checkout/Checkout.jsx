@@ -1,7 +1,9 @@
-import React ,{ useState } from "react";
-import { Link } from "react-router-dom";
+import React ,{ useContext, useState } from "react";
+import { Link, useLoaderData } from "react-router-dom";
+import { AuthContext } from "../../context/AuthProvider";
 
 const Checkout = () => {
+    const{ user } = useContext(AuthContext);
     const countries = ["China", "Russia", "UK"];
     const [menu, setMenu] = useState(false);
     const [country, setCountry] = useState("United States");
@@ -10,6 +12,8 @@ const Checkout = () => {
         setMenu(false);
         setCountry(e.target.textContent);
     };
+    const cuDetails = useLoaderData();
+    const {tittle, img, profile, price, rating ,cate_name, description } = cuDetails;
     return (
         <section className="checkout-page">
 		<div className="bg-accent p-12 my-10 shadow-xl">
@@ -84,11 +88,14 @@ const Checkout = () => {
                     <div className="flex flex-col xl:flex-row justify-center xl:justify-between space-y-6 xl:space-y-0 xl:space-x-6 w-full">
                         <div className=" flex flex-col sm:flex-row xl:flex-col justify-center items-center bg-gray-100 py-7 sm:py-0 xl:py-10 px-10 xl:w-full">
                             <div className="flex flex-col justify-start items-start w-full space-y-4">
-                                <p className="text-xl md:text-2xl leading-normal text-gray-800">Logitech K251</p>
-                                <p className="text-base font-semibold leading-none text-gray-600">$520.00</p>
+                                <p className="text-xl md:text-2xl leading-normal text-gray-800">{tittle}</p>
+                                <p className="text-base font-semibold leading-none text-gray-600">${price}</p>
                             </div>
-                            <div className="mt-6 sm:mt-0 xl:my-10 xl:px-20 w-52 sm:w-96 xl:w-auto">
-                                <img src="https://i.ibb.co/0GFzTP4/Rectangle-131.png" alt="headphones" />
+                            <div className="mt-4 sm:mt-0 xl:my-10 xl:px-20 w-52 sm:w-96 xl:w-auto">
+                                <img src={img} alt={tittle} />
+                            </div>
+                            <div className="mt-4 sm:mt-0 xl:my-10 xl:px-20 w-52 sm:w-96 xl:w-auto text-gray-800">
+                                {description}
                             </div>
                         </div>
 
@@ -115,7 +122,7 @@ const Checkout = () => {
                             </div>
 
                             <div className="mt-8">
-                                <input className="border border-gray-300 p-4 rounded w-full text-base leading-4 placeholder-gray-600 text-gray-600" type="email" placeholder="Email" />
+                                <input className="border border-gray-300 p-4 rounded w-full text-base leading-4 placeholder-gray-600 text-gray-600" type="email" placeholder={user?.email} readOnly />
                             </div>
 
                             <label className="mt-8 text-base leading-4 text-gray-800">Card details</label>
@@ -156,9 +163,9 @@ const Checkout = () => {
                                 <input className="border rounded-bl rounded-br border-gray-300 p-4 w-full text-base leading-4 placeholder-gray-600 text-gray-600" type="text" placeholder="ZIP" />
                             </div>
 
-                            <button className="mt-8 border border-transparent hover:border-gray-300 bg-gray-900 hover:bg-white text-white hover:text-gray-900 flex justify-center items-center py-4 rounded w-full">
+                            <button className=" btn btn-primary mt-8 border border-transparent   flex justify-center items-center py-4 rounded w-full">
                                 <div>
-                                    <p className="text-base leading-4">Pay $54652</p>
+                                    <p className="text-base leading-4">Pay ${price}</p>
                                 </div>
                             </button>
                         </div>

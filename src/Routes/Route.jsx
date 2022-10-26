@@ -46,6 +46,11 @@ export const route = createBrowserRouter([
                 element:<CurriculumDetails></CurriculumDetails>
             },
             {
+                path:"/curriculum/:id",
+                loader: ({params})=> fetch(`http://localhost:4000/curriculum/${params.id}`),
+                element:<CurriculumDetails></CurriculumDetails>
+            },
+            {
                 path:"/faq",
                 element:<Faq></Faq>
             },
@@ -60,6 +65,12 @@ export const route = createBrowserRouter([
             },
             {
                 path:'/checkout',
+                element:<PrivateRoutes> <Checkout></Checkout> </PrivateRoutes> 
+
+            },
+            {
+                path:'/checkout/:id',
+                loader:({params})=> fetch(`http://localhost:4000/curriculum/${params.id}`),
                 element:<PrivateRoutes> <Checkout></Checkout> </PrivateRoutes> 
 
             }

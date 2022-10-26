@@ -5,7 +5,7 @@ import Logo from "../Logo";
 const Footer = () => {
 	return (
     
-		<footer className=" bg-secondary text-primary-content">
+		<footer className=" bg-neutral text-primary">
 			<div className="container mx-auto my-4 pt-10 px-10">
 				<div className="footer lg:grid-rows-1 grid-rows-2">
 					<div>
@@ -37,7 +37,7 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-			<div className="container mx-auto my-4 p-10">
+			<div className="container mx-auto p-10">
 				<div className="footer items-center justify-center grid-rows-2 gap-y-2">
 					<div className="flex items-center justify-center text-center flex-col">
 					<Logo> </Logo>

@@ -9,9 +9,6 @@ const CurriculumList = ({ curriculum }) => {
     const handleNavigate = () =>{
       navigate(`/curriculum/${id}`)
     }
-
-
-
 	return (
 		<div className="card card-compact bg-base-100 shadow-xl">
 			<figure>
@@ -30,11 +27,11 @@ const CurriculumList = ({ curriculum }) => {
 				</div>
         <div className="divider"></div> 
         <div className="card-actions justify-between">
-          <div className="price flex text-2xl text- justify-start items-center font-bold text-yellow-800">
+          <div className="price flex text-2xl text- justify-start items-center font-bold ">
            <BsCurrencyDollar /><p>{price}</p>
           </div>
-          <div className="price flex text-xl text- justify-start items-center font-bold text-yellow-400 ">
-           <BsStarFill /> <BsStarFill /> <BsStarFill /> <BsStarFill /> <BsStarHalf /> <p className="ml-2 text-yellow-800">{rating}</p>
+          <div className="price flex text-xl text- justify-start items-center font-bold">
+           <span className="flex text-yellow-300"><BsStarFill /> <BsStarFill /> <BsStarFill /> <BsStarFill /> <BsStarHalf /> </span> <p className="ml-2 text-secondary">{rating}</p>
           </div>
 				
 				</div>

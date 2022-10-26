@@ -1,19 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: 'dark',
 	daisyui: {
 		themes: [
 			{
 			cyberLight: {
         "primary": "#fce355",
           
-        "secondary": "#c7d2fe",
+        "secondary": "#2d638e",
                  
         "accent": "#210c66",
                  
         "neutral": "#181B20",
                  
-        "base-100": "#FCFCFC",
+        "base-100": "#FFFFFF",
                  
         "info": "#fef9c3",
                  
