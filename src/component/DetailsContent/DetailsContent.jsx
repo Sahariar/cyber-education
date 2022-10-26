@@ -57,9 +57,19 @@ const DetailsContent = ({ cuDetails, studentEnroll }) => {
 								<img src={profile.insImg} alt={profile.name} />
 							</div>
 						</div>
-
-						<p>By {profile.name}</p>
+                        <p>By {profile.name}</p>
 					</div>
+					<div className="card-actions justify-start items-center my-4">
+                        <div className="ins-info">
+                        <h4 className="text-xl">
+                            About Instructor
+                        </h4>
+                        <p>{profile.about}</p>
+                        </div>
+						 
+					</div>
+
+                    
 				</div>
 				<div className="learn-area my-4">
 					<h4 className="text-2xl font-bold py-4">

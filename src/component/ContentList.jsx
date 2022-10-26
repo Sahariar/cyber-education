@@ -8,7 +8,7 @@ const ContentList = ({item}) => {
 	<div className="container flex flex-col justify-center px-2 py-2 mx-auto md:p-2">
         <div className="space-y-4">
 			<details className="w-full border rounded-lg">
-				<summary className="px-4 py-6 focus:outline-none focus-visible:ring-violet-400">{contentTitle}</summary>
+				<summary className="px-4 py-6 text-xl">{contentTitle}</summary>
 				{
                     contentInfo.map( item => <ContentListDetails
                     key={item.infoId}

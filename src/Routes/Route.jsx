@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import CurriculumDetails from "../component/CurriculumDetails/CurriculumDetails";
 import Root from "../Layout/Root";
 import Blog from "../Pages/Blog/Blog";
+import Category from "../Pages/Category/Category";
 import Checkout from "../Pages/Checkout/Checkout";
 import Curriculum from "../Pages/Curriculum/Curriculum";
 import Faq from "../Pages/Faq/Faq";
@@ -50,6 +51,17 @@ export const route = createBrowserRouter([
                 loader: ({params})=> fetch(`http://localhost:4000/curriculum/${params.id}`),
                 element:<CurriculumDetails></CurriculumDetails>
             },
+            {
+                path:"/category",
+                loader: ()=> fetch(`http://localhost:4000/cate`),
+                element:<Category></Category>
+            },
+            {
+                path:"/category/:id",
+                loader: ({params})=> fetch(`http://localhost:4000/cate/${params.id}`),
+                element:<Category></Category>
+            },
+       
             {
                 path:"/faq",
                 element:<Faq></Faq>

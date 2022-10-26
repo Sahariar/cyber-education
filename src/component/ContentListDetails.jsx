@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { BiTime } from "react-icons/bi";
 const ContentListDetails = ({item}) => {
     const {contentName , contentDuration } = item
     return (
@@ -9,7 +9,7 @@ const ContentListDetails = ({item}) => {
         </div>
         <div className=" flex text-xl text- justify-start items-center">
            
-            {contentDuration} Minutes
+        <span className='mx-2'> <BiTime /> </span> {contentDuration} Minutes
         </div>
     </div>
     );

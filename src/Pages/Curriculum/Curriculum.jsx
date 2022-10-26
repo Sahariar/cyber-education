@@ -65,9 +65,9 @@ const Curriculum = () => {
 
 				<div className="flex flex-col lg:flex-row gap-4">
   <div className="lg:w-3/12 w-full ">
-	<Sidebar>
-
-	</Sidebar>
+  {
+			 <Sidebar></Sidebar>
+		}
   </div>
   <div className="lg:w-9/12 mx-auto w-full">
   <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-4 mx-auto">
