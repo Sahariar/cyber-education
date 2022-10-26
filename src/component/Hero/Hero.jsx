@@ -10,9 +10,9 @@ const Hero = () => {
 	};
 	const { View } = useLottie(lottieAnimOptions);
 	return (
-		<div className="hero lg:min-h-screen container mx-auto my-10">
+		<div className="hero lg:min-h-screen container mx-auto my-10 ">
 			<div className="flex flex-col md:flex-col-reverse rounded-lg shadow-lg p-6 lg:p-20 bg-info gap-5 w-full">
-				<div className="lg:w-7/12 mx-auto bg-gradient-to-r from-primary to-blue-200 rounded-lg shadow-lg">
+				<div className=" lg:w-7/12 mx-auto bg-gradient-to-r from-primary to-blue-200 rounded-lg shadow-lg">
 					{View}
 				</div>
 				<div className="w-10/12 mx-auto text-center">
@@ -26,17 +26,17 @@ const Hero = () => {
 						<div className="avatar-group -space-x-6">
 							<div className="avatar">
 								<div className="w-12">
-									<img src="https://placeimg.com/192/192/animals" />
+									<img src="https://randomuser.me/api/portraits/women/25.jpg" />
 								</div>
 							</div>
 							<div className="avatar">
 								<div className="w-12">
-									<img src="https://placeimg.com/192/192/arch" />
+									<img src="https://randomuser.me/api/portraits/men/13.jpg" />
 								</div>
 							</div>
 							<div className="avatar">
 								<div className="w-12">
-									<img src="https://placeimg.com/192/192/nature" />
+									<img src="https://randomuser.me/api/portraits/women/35.jpg" />
 								</div>
 							</div>
 							<div className="avatar placeholder">
@@ -49,7 +49,7 @@ const Hero = () => {
                         500K+ People already trusted us. 
                         </div>
                         <Link to={'/curriculum'}>
-                        <span className="btn btn-primary text-neutral cursor-pointer p-4 rounded-md" >
+                        <span className="btn btn-primary text-neutral cursor-pointer p-4 rounded-md mx-4" >
                         View curriculum
                         </span>
                         </Link>

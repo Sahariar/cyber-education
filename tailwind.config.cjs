@@ -8,7 +8,7 @@ module.exports = {
 			cyberLight: {
         "primary": "#fce355",
           
-        "secondary": "#2d638e",
+        "secondary": "#ceb3ef",
                  
         "accent": "#210c66",
                  
