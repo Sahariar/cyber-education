@@ -25,7 +25,7 @@ const DetailsContent = ({ cuDetails, studentEnroll }) => {
 				<h2 className="text-5xl">{tittle}</h2>
 				<div className="header-info flex justify-start my-4 items-center">
 					<div className="cate-area mx-2">
-						<div class="badge badge-primary p-5">{cate_name}</div>
+						<div className="badge badge-primary p-5">{cate_name}</div>
 					</div>
 					<div className="card-actions justify-between mx-2">
 						<div className="price flex text-lg text- justify-start items-center font-bold">

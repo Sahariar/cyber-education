@@ -2,7 +2,7 @@ import React from 'react';
 
 const Stats = () => {
     return (
-        <section className="p-6 bg-slate-100 py-10">
+        <section className="p-6 bg-slate-100 py-10 text-black">
 
 <div className="p-12 container mx-auto">
             <p className='text-sm text-center'> 

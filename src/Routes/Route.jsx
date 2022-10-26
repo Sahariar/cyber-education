@@ -38,27 +38,22 @@ export const route = createBrowserRouter([
             },
             {
                 path:"/curriculum",
-                loader: ()=> fetch('http://localhost:4000/curriculum'),
+                loader: ()=> fetch('https://cyber-education-server.vercel.app/curriculum'),
                 element:<Curriculum></Curriculum>
             },
             {
                 path:"/curriculum/:id",
-                loader: ({params})=> fetch(`http://localhost:4000/curriculum/${params.id}`),
-                element:<CurriculumDetails></CurriculumDetails>
-            },
-            {
-                path:"/curriculum/:id",
-                loader: ({params})=> fetch(`http://localhost:4000/curriculum/${params.id}`),
+                loader: ({params})=> fetch(`https://cyber-education-server.vercel.app/curriculum/${params.id}`),
                 element:<CurriculumDetails></CurriculumDetails>
             },
             {
                 path:"/category",
-                loader: ()=> fetch(`http://localhost:4000/cate`),
+                loader: ()=> fetch(`https://cyber-education-server.vercel.app/cate`),
                 element:<Category></Category>
             },
             {
                 path:"/category/:id",
-                loader: ({params})=> fetch(`http://localhost:4000/cate/${params.id}`),
+                loader: ({params})=> fetch(`https://cyber-education-server.vercel.app/cate/${params.id}`),
                 element:<Category></Category>
             },
        
@@ -82,7 +77,7 @@ export const route = createBrowserRouter([
             },
             {
                 path:'/checkout/:id',
-                loader:({params})=> fetch(`http://localhost:4000/curriculum/${params.id}`),
+                loader:({params})=> fetch(`https://cyber-education-server.vercel.app/curriculum/${params.id}`),
                 element:<PrivateRoutes> <Checkout></Checkout> </PrivateRoutes> 
 
             }

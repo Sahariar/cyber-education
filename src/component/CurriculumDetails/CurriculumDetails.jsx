@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import DetailsContent from "../DetailsContent/DetailsContent";
 import DetailsSidebar from "../DetailsSidebar/DetailsSidebar";
+import Pdf from "react-to-pdf";
+const ref = React.createRef();
 
 const CurriculumDetails = () => {
 	const cuDetails = useLoaderData();
@@ -9,7 +11,7 @@ const CurriculumDetails = () => {
     const studentEnroll = Math.floor((Math.random() * 1000) + 1);
 
 	return (
-		<section className="curriculum-page">
+		<section className="curriculum-details-page" ref={ref}>
 			<div className="bg-accent p-12 my-10 shadow-xl">
 				<h1 className="text-4xl font-bold text-center text-white">{tittle}</h1>
 				<div className="text-sm breadcrumbs text-center justify-center flex mt-4 text-white">
@@ -68,6 +70,14 @@ const CurriculumDetails = () => {
 						</li>
 					</ul>
 				</div>
+                <div className="container mx-auto">
+                    <div className="w-4/12 mx-auto flex mt-4">
+        <Pdf targetRef={ref} filename="curriculum.pdf" scale={0.415}>
+        {({ toPdf }) => <button className="btn-primary btn btn-wide text-center mx-auto" onClick={toPdf}>Generate Pdf</button>}
+        </Pdf>
+                    </div>
+                </div>
+         
 			</div>
 			<div className="container mx-auto space-y-6 my-24">
 				<div className="flex flex-col xl:flex-row-reverse gap-4">

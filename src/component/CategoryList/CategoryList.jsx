@@ -9,7 +9,6 @@ const CategoryList = ({category}) => {
     const handleCateNavigation = () => {
         navigate(`/category/${id}`);
     }
-    console.log(pathUrl);
     return (
         <div className= {pathUrl === `/category/${id}` ? "card-actions justify-between py-2 cursor-pointer px-5 bg-primary rounded-lg" :"card-actions justify-between py-2 cursor-pointer px-5" }
         onClick={

@@ -13,7 +13,7 @@ const HomeCateCard = ({item}) => {
             handleNavigate()
           }}>
         <div className="">
-        <div className="w-32 h-32 rounded-full ring ring-info ring-offset-base-100 ring-offset-2 mx-auto flex bg-info justify-center items-center">
+        <div className="w-32 h-32 rounded-full ring ring-info ring-offset-base-100 ring-offset-2 mx-auto flex bg-yellow-50 justify-center items-center">
           <img src={img} alt={name} className="w-20 h-20 mx-auto" />
         </div>
       </div>

@@ -10,7 +10,7 @@ const CurriculumList = ({ curriculum }) => {
       navigate(`/curriculum/${id}`)
     }
 	return (
-		<div className="card card-compact bg-base-100 shadow-xl">
+		<div className="card w-11/12 lg:w-full mx-auto card-compact bg-base-100 shadow-xl">
 			<figure>
 				<img src={img} alt={tittle} />
 			</figure>

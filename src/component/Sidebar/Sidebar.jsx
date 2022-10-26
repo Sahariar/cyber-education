@@ -14,7 +14,7 @@ const Sidebar = () => {
   }
   const pathUrl = window.location.pathname
     return (
-        <div className="card bg-base-100 shadow-xl mx-auto">
+        <div className="card md:w-8/12 w-11/12 lg:w-full bg-base-100 shadow-xl mx-auto">
   <div className="card-body">
     <div className="category-area">
     <h2 className="card-title ">

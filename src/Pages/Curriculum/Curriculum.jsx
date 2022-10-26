@@ -64,13 +64,13 @@ const Curriculum = () => {
 				</div>
 
 				<div className="flex flex-col lg:flex-row gap-4">
-  <div className="lg:w-3/12 w-full ">
+  <div className="lg:w-4/12 xl:w-3/12 w-full ">
   {
 			 <Sidebar></Sidebar>
 		}
   </div>
-  <div className="lg:w-9/12 mx-auto w-full">
-  <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-4 mx-auto">
+  <div className="lg:w-8/12 xl:w-9/12 mx-auto w-full">
+  <div className="grid xl:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-4 mx-auto">
 		{
 			curriculums.map( curriculum => <CurriculumList
 			key={curriculum.id}
