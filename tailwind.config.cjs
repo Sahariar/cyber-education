@@ -28,11 +28,11 @@ module.exports = {
           
           "secondary": "#e3ff89",
                    
-          "accent": "#7e1eaa",
+          "accent": "#3a9b11",
                    
           "neutral": "#2F2136",
                    
-          "base-100": "#3D3D3D",
+          "base-100": "#2C2F58",
                    
           "info": "#1E252F",
                    
