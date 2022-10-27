@@ -2,11 +2,18 @@ import React, { useContext } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider';
 
+/* 
+1. only allow authenticated user to visit the route
+2. 
+3. Redirect user to the route they wanted to go before login
+*/
+
 const PrivateRoutes = ({children}) => {
 
     const {user , loading} = useContext(AuthContext);
     const location = useLocation();
     console.log(loading);
+
     if(loading){
         return <>
         <div className='bg-gray-100'>
