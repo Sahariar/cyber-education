@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import {Autoplay, Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
-import FeaturedSlideCard from '../FeaturedSlideCard/FeaturedSlideCard';
+
 import { useNavigate } from 'react-router-dom';
 const FeaturedSection = () => {
     const{feature} = useContext(DataContext);
@@ -58,7 +58,7 @@ Instructors from around the world teach millions of students on Cyber Education.
             <div className="xl:w-8/12 p-2">
             <Swiper
         cssMode={true}
-        slidesPerView={3}
+        slidesPerView={1}
         spaceBetween={30}
         navigation={true}
         loop={true}
@@ -66,6 +66,20 @@ Instructors from around the world teach millions of students on Cyber Education.
         autoplay={{
             delay: 2500,
             disableOnInteraction: false,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
           }}
         modules={[Navigation, Pagination , Autoplay]}
         className="mySwiper"
@@ -77,7 +91,7 @@ Instructors from around the world teach millions of students on Cyber Education.
 				<img src={item.img} alt={item.tittle} />
 			</figure>
 			<div className="card-body">
-				<h2 className="card-title">{item.tittle.slice(0,35)}...</h2>
+				<h2 className="card-title">{item.tittle}...</h2>
 				<div className="card-actions justify-start items-center">
 				</div>
         <div className="card-actions">

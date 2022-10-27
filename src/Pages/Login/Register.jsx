@@ -290,7 +290,7 @@ const Register = () => {
 
 								{notification !== "" && (
 									<div className="space-y-4">
-										<div className="bg-info rounded-lg shadow-lg p-5 text-white">
+										<div className="bg-success rounded-lg shadow-lg p-5 text-black">
 											{notification}
 										</div>
 									</div>

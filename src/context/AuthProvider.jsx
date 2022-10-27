@@ -10,7 +10,8 @@ import {
     sendEmailVerification,
     signInWithEmailAndPassword,
     updateProfile,
-	GithubAuthProvider
+	GithubAuthProvider,
+	sendPasswordResetEmail
 } from "firebase/auth";
 
 export const AuthContext = createContext();
@@ -40,6 +41,10 @@ const AuthProvider = ({ children }) => {
 		setLoading(true);
 		return signInWithEmailAndPassword(auth, email, password);
 	};
+	const sendResetPass = (email) => {
+
+		return sendPasswordResetEmail(auth, email,);
+	};
     const userProfileUpdate  = (name , photoUrl ) => {
         return updateProfile(auth.currentUser, {
             displayName: name, photoURL: photoUrl
@@ -54,14 +59,12 @@ const AuthProvider = ({ children }) => {
         return sendEmailVerification(auth.currentUser);
     }
 	useEffect(() => {
-		const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+		const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
 			setUser(currentUser);
 			setLoading(false);
 		});
 
-		return () => {
-			unsubscribe();
-		};
+		return () => unSubscribe();
 	}, []);
 
 	const authValues = {
@@ -74,6 +77,7 @@ const AuthProvider = ({ children }) => {
         verifyEmail,
         userProfileUpdate,
 		logInWithGitHub,
+		sendResetPass,
 	};
 
 	return (

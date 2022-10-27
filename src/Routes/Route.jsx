@@ -10,6 +10,7 @@ import Faq from "../Pages/Faq/Faq";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Login/Register";
+import ResetPassword from "../Pages/Login/ResetPassword/ResetPassword";
 import NotFound from "../Pages/NotFound/NotFound";
 import Profile from "../Pages/Profile/Profile";
 import PrivateRoutes from "./PrivateRoutes/PrivateRoutes";
@@ -31,6 +32,10 @@ export const route = createBrowserRouter([
             {
                 path:"/login",
                 element:<Login />
+            },
+            {
+                path:"/reset",
+                element:<ResetPassword />
             },
             {
                 path:"/register",

@@ -12,14 +12,12 @@ const Login = () => {
 
 	const { View } = useLottie(lottieAnimOptions);
 
-    const {logInWithGoogle, logInUserWithEmail , logInWithGitHub} = useContext(AuthContext);
+    const {logInWithGoogle, logInUserWithEmail , logInWithGitHub , sendResetPass} = useContext(AuthContext);
     const [notification , setNotification] = useState(''); 
     const [error , setError] = useState(''); 
     const navigate = useNavigate();
     const location = useLocation();
     const from = location.state?.from?.pathname || "/"; 
-
-    console.log(from);
 
     const handleSubmission = (event) => {
 
@@ -37,7 +35,7 @@ const Login = () => {
             setError('')
             form.reset();
             console.log(user);
-
+			setNotification("Successful")
             navigate(from, { replace: true });
             // ...
           })
@@ -131,8 +129,8 @@ const Login = () => {
 
             </div>
             <div className="container mx-auto">
-            <div className="flex">
-			<div className="w-6/12 max-w-md p-4 rounded-md shadow sm:p-8 mx-auto bg-blue-50">
+            <div className="flex flex-col xl:flex-row">
+			<div className="xl:w-6/12 max-w-md p-4 rounded-md shadow sm:p-8 mx-auto bg-blue-50">
 				<h2 className="mb-3 text-3xl font-semibold text-center text-accent">
 					Log into your account
 				</h2>
@@ -204,13 +202,15 @@ const Login = () => {
 								<label htmlFor="password" className="text-sm text-accent">
 									Password
 								</label>
-								<a
+								<Link to={'/reset'}>
+								<span  
 									rel="noopener noreferrer"
-									href="#"
+									
 									className="text-xs hover:underline  text-accent "
 								>
 									Forgot password?
-								</a>
+								</span>
+								</Link>
 							</div>
 							<input
 								type="password"
@@ -231,7 +231,7 @@ const Login = () => {
 
                     {notification !== "" && (
 						<div className="space-y-4">
-							<div className="bg-info rounded-lg shadow-lg p-5 text-white">
+							<div className="bg-success rounded-lg shadow-lg p-5 text-white">
 								{notification}
 							</div>
 						</div>
@@ -245,7 +245,7 @@ const Login = () => {
 					</button>
 				</form>
 			</div>
-            <div className="w-5/12 h-48">
+            <div className="xl:w-5/12 xl:h-48">
             {View}
             </div>
             </div>

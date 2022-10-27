@@ -6,8 +6,8 @@ const PrivateRoutes = ({children}) => {
 
     const {user , loading} = useContext(AuthContext);
     const location = useLocation();
-
-    if( loading){
+    console.log(loading);
+    if(loading){
         return <>
         <div className='bg-gray-100'>
         <div className=" rounded relative">
@@ -27,7 +27,7 @@ const PrivateRoutes = ({children}) => {
     
     </div>
         </>
-    } 
+    }
 
     if( !user){
         return <Navigate to="/login" state={{ from: location }} replace />;
