@@ -6,11 +6,14 @@ const DataProvider = ({ children }) => {
 	const [dataCate, setDataCate] = useState([]);
 	const [feature, setFeature] = useState([]);
 	const [hot, setHot] = useState([]);
+	const [sortNew, setSortNew] = useState([]);
 	const [special, setSpecial] = useState([]);
 	const [sortPrice, setSortPrice] = useState([]);
 	const [sortPriceDes, setPriceDes] = useState([]);
 	const [sortRating, setRating] = useState([]);
 	const [sortRatingDes, setRatingDes] = useState([]);
+
+
 	useEffect(() => {
 		const getCateData = async () => {
 			const response = await fetch(
@@ -21,16 +24,18 @@ const DataProvider = ({ children }) => {
 		};
 		getCateData();
 	}, []);
+
 	useEffect(() => {
-		const getCateData = async () => {
+		const getFeatureData = async () => {
 			const response = await fetch(
 				"https://cyber-education-server.vercel.app/feature"
 			);
 			const data = await response.json();
 			setFeature(data);
 		};
-		getCateData();
+		getFeatureData();
 	}, []);
+
 	useEffect(() => {
 		const getCateData = async () => {
 			const response = await fetch(
@@ -41,6 +46,7 @@ const DataProvider = ({ children }) => {
 		};
 		getCateData();
 	}, []);
+
 	useEffect(() => {
 		const getCateData = async () => {
 			const response = await fetch(
@@ -51,6 +57,7 @@ const DataProvider = ({ children }) => {
 		};
 		getCateData();
 	}, []);
+
 	useEffect(() => {
 		const getCateData = async () => {
 			const response = await fetch(
@@ -61,6 +68,7 @@ const DataProvider = ({ children }) => {
 		};
 		getCateData();
 	}, []);
+
 	useEffect(() => {
 		const getCateData = async () => {
 			const response = await fetch(
@@ -71,6 +79,7 @@ const DataProvider = ({ children }) => {
 		};
 		getCateData();
 	}, []);
+    
 	useEffect(() => {
 		const getCateData = async () => {
 			const response = await fetch(
@@ -101,7 +110,6 @@ const DataProvider = ({ children }) => {
 		};
 		getCateData();
 	}, []);
-
 	const dataValue = {
 		dataCate,
 		feature,
@@ -115,7 +123,9 @@ const DataProvider = ({ children }) => {
 	};
 
 	return (
-		<DataContext.Provider value={dataValue}>{children}</DataContext.Provider>
+		<DataContext.Provider value={dataValue}>
+            {children}
+        </DataContext.Provider>
 	);
 };
 

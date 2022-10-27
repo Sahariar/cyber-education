@@ -6,13 +6,21 @@ import Blog from "../Pages/Blog/Blog";
 import Category from "../Pages/Category/Category";
 import Checkout from "../Pages/Checkout/Checkout";
 import Curriculum from "../Pages/Curriculum/Curriculum";
+import CurriculumNew from "../Pages/CurriculumNew/CurriculumNew";
 import Faq from "../Pages/Faq/Faq";
+import Feature from "../Pages/Feature/Feature";
 import Home from "../Pages/Home/Home";
+import Hot from "../Pages/Hot/Hot";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Login/Register";
 import ResetPassword from "../Pages/Login/ResetPassword/ResetPassword";
 import NotFound from "../Pages/NotFound/NotFound";
+import Price from "../Pages/Price/Price";
+import PriceDesc from "../Pages/PriceDesc/PriceDesc";
 import Profile from "../Pages/Profile/Profile";
+import Ratting from "../Pages/Ratting/Ratting";
+import RattingDsec from "../Pages/RattingDsec/RattingDsec";
+import Spacial from "../Pages/Spacial/Spacial";
 import PrivateRoutes from "./PrivateRoutes/PrivateRoutes";
 
 
@@ -66,6 +74,43 @@ export const route = createBrowserRouter([
                 path:"/faq",
                 element:<Faq></Faq>
             },
+            {
+                path:"/blog",
+                element:<Blog></Blog>
+            },
+            {
+                path:"/feature",
+                element:<Feature></Feature>
+            },
+            {
+                path:"/hot",
+                element:<Hot></Hot>
+            },
+            {
+                path:"/spacial",
+                element:<Spacial></Spacial>
+            },
+            {
+                path:"/newcurriculum",
+                element:<CurriculumNew></CurriculumNew>
+            },
+            {
+                path:"/price",
+                element:<Price></Price>
+            },
+            {
+                path:"/pricedes",
+                element:<PriceDesc></PriceDesc>
+            },
+            {
+                path:"/ratting",
+                element:<Ratting></Ratting>
+            },
+            {
+                path:"/rattingdes",
+                element:<RattingDsec></RattingDsec>
+            },
+
             {
                 path:"/blog",
                 element:<Blog></Blog>
