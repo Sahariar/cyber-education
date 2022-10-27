@@ -23,22 +23,22 @@ const DetailsContent = ({ cuDetails, studentEnroll }) => {
 		<div className="card bg-base-100 shadow-xl">
 			<div className="card-body">
 				<h2 className="text-5xl">{tittle}</h2>
-				<div className="header-info flex justify-start my-4 items-center">
+				<div className="header-info flex flex-col lg:flex-row justify-start my-4 items-center gap-4">
 					<div className="cate-area mx-2">
 						<div className="badge badge-primary p-5">{cate_name}</div>
 					</div>
 					<div className="card-actions justify-between mx-2">
-						<div className="price flex text-lg text- justify-start items-center font-bold">
+						<div className=" flex text-lg text- justify-start items-center font-bold">
 							<span className="text-2xl">
 								<AiOutlineUsergroupAdd />
 							</span>
 						</div>
-						<div className="price flex text-xl text- justify-start items-center font-bold  ">
+						<div className=" flex text-xl text- justify-start items-center font-bold  ">
 							<p>{studentEnroll} Students</p>
 						</div>
 					</div>
 					<div className="card-actions justify-between mx-2">
-						<div className="price flex text-lg text- justify-start items-center font-bold">
+						<div className=" flex text-lg text- justify-start items-center font-bold">
 							<span className="text-2xl">
 								<BsFillCalendarDateFill />
 							</span>

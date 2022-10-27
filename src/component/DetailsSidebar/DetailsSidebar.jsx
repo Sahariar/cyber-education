@@ -124,7 +124,7 @@ const DetailsSidebar = ({cuDetails , studentEnroll }) => {
                 <button className="btn btn-primary btn-block" onClick ={()=>{
                     handleEnroll()
                 }}>
-                    Enroll Now
+                   Get premium access
                 </button>
             </div>
         <div className="card-actions justify-center my-4">
