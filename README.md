@@ -10,6 +10,9 @@
 </p>
 
 > This is a project about using firebase,node,express with private route and more. This project about how well i learn these concepts and implement into a Project.
+> Here data about education 
+
+### 🏠 [Homepage](https://cyber-education-b16df.web.app/)
 
 ## Install
 

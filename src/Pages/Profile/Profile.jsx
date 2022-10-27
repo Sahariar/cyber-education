@@ -97,9 +97,9 @@ const Profile = () => {
 				</div>
 			</div>
 			<div className="container mx-auto">
-				<div className="flex">
-					<div className="w-3/12">
-						<div className=" m-6 flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 bg-blue-50 text-accent">
+				<div className="flex flex-col lg:flex-row">
+					<div className=" lg:w-3/12 w-11/12 mx-auto">
+						<div className="  m-6 flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 bg-blue-50 text-accent mx-auto">
 							<img
 								src={
 									user?.photoURL
@@ -179,7 +179,7 @@ const Profile = () => {
 							</div>
 						</div>
 					</div>
-					<div className="w-8/12">
+					<div className="lg:w-8/12 w-11/12 mx-auto">
 						<div className="p-6 ">
 							<form onSubmit={handleUpdateProfileSubmission} className="container flex flex-col mx-auto space-y-12 ng-untouched ng-pristine ng-valid text-accent">
 								<fieldset className="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm bg-blue-50">
