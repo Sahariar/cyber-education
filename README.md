@@ -53,7 +53,6 @@
    * react,
    * react-dom,
    * react-icons,
-   * react-pdf",
    * react-router-dom,
    * react-to-pdf,
    * react-toastify,
