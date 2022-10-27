@@ -5,7 +5,7 @@
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
   <a href="https://twitter.com/Sahariar__Kabir" target="_blank">
-    <img alt="Twitter: Sahariar__Kabir" src="https://img.shields.io/twitter/follow/sahariar\_\_kabir.svg?style=social" />
+    <img alt="Twitter: Sahariar__Kabir" src="https://img.shields.io/twitter/follow/sahariar__kabir.svg?style=social" />
   </a>
 </p>
 
@@ -13,6 +13,39 @@
 > Here data about education 
 
 ### 🏠 [Homepage](https://cyber-education-b16df.web.app/)
+
+### ✨ [Demo](https://cyber-education-b16df.web.app/)
+
+###  What did i do for this Project?
+  * Added Logo and Favicon,
+  * Added Header component,
+  * used Tailwindcss with daisyUi,
+  * used Lottie react animation for Animation
+  * Use React-router for Routing URL and Client site rendering.
+  * Used UseContext for For data to be available for the Whole app.
+  * sometime use props for passing data to children components.
+  * Add 12 Filter Options for Curriculum page.
+  * Added slider with swiperjs
+  * Added Download pdf button to Curriculum details page and it can generate pdf.
+  * Fully integrated Authentication with Firebase.
+  * site deploy to firebase hosting.
+  * Have theme toggle option for Dark and light.
+  * use Localhost for saving theme name data so it can read info when use return and have their preferred theme.
+  * setup server for data.
+
+
+
+### Feature
+ * SPA site,
+ * Api Fetch,
+ * 404 page,
+ * Authentication ,
+ * Responsive site,
+ * React,
+ * Firebase,
+ * Data Server
+
+
 
 ## Install
 

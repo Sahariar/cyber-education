@@ -161,9 +161,9 @@ const Register = () => {
 				</div>
 			</div>
 			<div className="container mx-auto">
-				<div className="flex">
-					<div className="w-5/12">{View}</div>
-					<div className="w-6/12 max-w-md p-4 rounded-md shadow sm:p-8 mx-auto bg-blue-50">
+				<div className="flex flex-col md:flex-col-reverse xl:flex-row">
+					<div className="xl:w-5/12 w-11/12">{View}</div>
+					<div className="w-11/12 xl:w-6/12 max-w-md p-4 rounded-md shadow sm:p-8 mx-auto bg-blue-50">
 						<h2 className="mb-3 text-3xl font-semibold text-center text-accent">
 							Register your account
 						</h2>
