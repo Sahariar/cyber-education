@@ -45,7 +45,20 @@
  * Firebase,
  * Data Server
 
-
+### Uses Framework and Library
+   * tailwindCss,
+   * daisyui
+   * firebase
+   * lottie-react,
+   * react,
+   * react-dom,
+   * react-icons,
+   * react-pdf",
+   * react-router-dom,
+   * react-to-pdf,
+   * react-toastify,
+   * readme-md-generator,
+   * swiper
 
 ## Install
 
